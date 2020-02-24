@@ -8,7 +8,8 @@ prompt([
         message: 'What is your Github Username?'
     }
 ]) .then((response) => {
-    console.log(response);
+    fs.writeFile('dev.md', `Github Username: ${response.githubUsername}`, function (err) {
+        if (err) throw err;
+        console.log('File created successfully.');
+    })
 })
-
-
