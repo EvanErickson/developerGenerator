@@ -1,3 +1,18 @@
+const questions = [
+
+];
+
+function writeToFile(fileName, data) {
+}
+
+function init() {
+
+}
+
+init();
+
+
+
 const prompt = require('inquirer').createPromptModule()
 const fs = require('fs')
 const axios = require('axios')
